@@ -212,7 +212,7 @@ In the table above, internal fragmentation is computed as follows:
   \frac{\text{allocated memory}}{\text{requested memory}} - 1
 \]
 
-When $\.{free}(7)$~is called, two gluing operations take place:
+When $\.{free}(6)$~is called, two gluing operations take place:
   first, the block $[6]$ is glued with its buddy $[7]$ to form the block $[6,7]$;
   second, the block $[4,5]$ is glued with its buddy $[6,7]$
     to form the block $[4,5,6,7]$.
