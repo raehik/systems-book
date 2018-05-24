@@ -130,7 +130,7 @@ The main point is that the operating system has a data structure
   that keeps track of which virtual memory areas are in use.
 This data structure is essentially a list of intervals:
 \[
-  [a_1,b_1),\; [a_2,b_2),\;\ldots,\;[a_n,b_n)
+  (a_1,b_1),\; (a_2,b_2),\;\ldots,\;(a_n,b_n)
 \]
 An address is in use if it is inside one of these intervals/areas.
 
@@ -301,7 +301,7 @@ If the straightforward translation fails,
   then the processor passes control to a \df{page fault handler},
     which is a part of the operating system that should fix the problem.
 The basic mechanism from~\eqref{eq:translation}
-  can easily be suplemented with other functionality.
+  can easily be supplemented with other functionality.
 The page table entry for one page can contain more than just the frame number.
 It can contain whether that page should or should not be writable;
   it can contain whether that page is dirty
